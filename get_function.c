@@ -25,7 +25,7 @@ void (*get_function(char *opcode))(stack_t **, unsigned int)
 	else if (strcmp(opcode, "mul") == 0)
 		return (mul);
 	else if (strcmp(opcode, "div") == 0)
-		return (div);
+		return (_div);
 	else if (strcmp(opcode, "mod") == 0)
 		return (mod);
 	else if (strcmp(opcode, "nop") == 0)

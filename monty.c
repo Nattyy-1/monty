@@ -11,6 +11,7 @@ int main(int argc, char **argv)
 {
 	FILE *fp;
 	char line[256];
+	int err_no;
 	unsigned int line_number = 0;
 	instruction_t current_instruction;
 	stack_t *stack_head = NULL;
@@ -38,6 +39,7 @@ int main(int argc, char **argv)
 		{
 			fprintf(stderr, "L%d: usage: push integer\n", line_number);
 			exit(EXIT_FAILURE);
+		}
 		else
 		{
 			fprintf(stderr, "L%d: unknown instruction %s\n",

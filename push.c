@@ -9,6 +9,8 @@ void push(stack_t **stack_head, unsigned int line_number)
 {
 	stack_t *node = malloc(sizeof(stack_t));
 
+	(void)line_number;
+
 	if (!node)
 	{
 		fprintf(stderr, "Error: malloc failed\n");
