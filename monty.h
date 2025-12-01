@@ -44,5 +44,6 @@ int check_op_code(char *op_code);
 int requires_argument(char *op_code);
 int is_number(char *argument);
 void (*get_function(char *op_code))(stack_t **head, unsigned int line_number);
+void push(stack_t **head, unsigned int line_number);
 
 #endif
