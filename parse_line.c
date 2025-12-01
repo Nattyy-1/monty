@@ -6,6 +6,7 @@
  * @current_instruction: pointer to the instruction to be executed
  *
  * Return: 0 if successful, 1 if opcode is invalid, 2 if push argument invalid
+ *	   , 3 if empty line or a comment
  */
 int parse_line(char *line, instruction_t *current_instruction)
 {
@@ -14,7 +15,7 @@ int parse_line(char *line, instruction_t *current_instruction)
 
 	opcode = strtok(line, " \t\n");
 	if (opcode == NULL || opcode[0] == '#')
-		return (0);
+		return (3);
 
 	if (check_op_code(opcode) == 1)
 		return (1);

@@ -1,7 +1,8 @@
 #include "monty.h"
 
 /**
- * mod - computes the rest of the division between the top and second top of stack
+ * mod - computes the rest of the division between the top and second
+ *	 top of stack
  * @stack_head: head of the stack
  * @line_number: the line number of the current instruction
  */

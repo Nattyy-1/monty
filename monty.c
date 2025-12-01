@@ -39,6 +39,9 @@ int main(int argc, char **argv)
 		{
 			fprintf(stderr, "L%d: usage: push integer\n", line_number);
 			exit(EXIT_FAILURE);
+		} else if (err_no == 3)
+		{
+			continue;
 		}
 		else
 		{

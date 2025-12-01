@@ -1,7 +1,8 @@
 #include "monty.h"
 
 /**
- * _div - Monty op_code, divides the second top element by the top element of the stack
+ * _div - Monty op_code, divides the second top element by the top element of
+ *	  the stack
  * @stack_head: head of the stack
  * @line_number: line number of the current instruction
  */

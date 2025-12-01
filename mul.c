@@ -1,7 +1,8 @@
 #include "monty.h"
 
 /**
- * mul - Monty op_code that multiplies the second top element of the stack with the first
+ * mul - Monty op_code that multiplies the second top element of the stack with
+ *	 the first
  * @stack_head: head of the stack
  * @line_number: the line number of the current instruction
  */
