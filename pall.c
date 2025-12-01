@@ -14,7 +14,7 @@ void pall(stack_t **stack_head, unsigned int line_number)
 	if (stack_head == NULL || *stack_head == NULL)
 		return;
 
-	while(head != NULL)
+	while (head != NULL)
 	{
 		printf("%d\n", head->n);
 		head = head->next;
