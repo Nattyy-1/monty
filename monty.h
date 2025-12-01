@@ -1,6 +1,14 @@
 #ifndef MONTY_H
 #define MONTY_H
 
+#include <stdlib.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+extern int push_value;
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -30,5 +38,11 @@ typedef struct instruction_s
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+
+int parse_line(char *line, instruction_t *current_instruction);
+int check_op_code(char *op_code);
+int requires_argument(char *op_code);
+int is_number(char *argument);
+void (*get_function(char *op_code))(stack_t **head, unsigned int line_number);
 
 #endif
