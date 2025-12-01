@@ -47,5 +47,6 @@ void (*get_function(char *op_code))(stack_t **head, unsigned int line_number);
 void push(stack_t **head, unsigned int line_number);
 void pint(stack_t **head, unsigned int line_number);
 void pop(stack_t **head, unsigned int line_number);
+void swap(stack_t **head, unsigned int line_number);
 
 #endif
