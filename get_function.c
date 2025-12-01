@@ -9,28 +9,28 @@
 void (*get_function(char *opcode))(stack_t **, unsigned int)
 {
 	if (strcmp(opcode, "push") == 0)
-		return push;
+		return (push);
 	else if (strcmp(opcode, "pall") == 0)
-		return pall;
+		return (pall);
 	else if (strcmp(opcode, "pint") == 0)
-		return pint;
+		return (pint);
 	else if (strcmp(opcode, "pop") == 0)
-		return pop;
+		return (pop);
 	else if (strcmp(opcode, "swap") == 0)
-		return swap;
+		return (swap);
 	else if (strcmp(opcode, "add") == 0)
-		return add;
+		return (add);
 	else if (strcmp(opcode, "sub") == 0)
-		return sub;
+		return (sub);
 	else if (strcmp(opcode, "mul") == 0)
-		return mul;
+		return (mul);
 	else if (strcmp(opcode, "div") == 0)
-		return _div;
+		return (div);
 	else if (strcmp(opcode, "mod") == 0)
-		return mod;
+		return (mod);
 	else if (strcmp(opcode, "nop") == 0)
-		return nop;
+		return (nop);
 	else
-		return NULL;
+		return (NULL);
 }
 

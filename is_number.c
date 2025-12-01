@@ -8,22 +8,22 @@
  */
 int is_number(char *argument)
 {
-    int i = 0;
+	int i = 0;
 
-    if (argument == NULL || argument[0] == '\0')
-        return (0);
+	if (argument == NULL || argument[0] == '\0')
+		return (0);
 
-    if (argument[0] == '-')
-        i = 1;
+	if (argument[0] == '-')
+		i = 1;
 
-    while (argument[i] != '\0')
-    {
-        if (isdigit(argument[i]) == 0)
-            return (0);
+	while (argument[i] != '\0')
+	{
+		if (isdigit(argument[i]) == 0)
+			return (0);
 
-        i++;
-    }
+		i++;
+	}
 
-    return (1);
+	return (1);
 }
 

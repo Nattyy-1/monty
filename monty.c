@@ -34,7 +34,7 @@ int main(int argc, char **argv)
 		err_no = parse_line(line, &current_instruction);
 		if (err_no == 0)
 			current_instruction.f(&stack_head, line_number);
-		else if(err_no == 2)
+		else if (err_no == 2)
 		{
 			fprintf(stderr, "L%d: usage: push integer\n", line_number);
 			exit(EXIT_FAILURE);
