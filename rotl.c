@@ -12,7 +12,7 @@ void rotl(stack_t **stack_head, unsigned int line_number)
 
 	if (stack_head == NULL || *stack_head == NULL || (*stack_head)->next == NULL)
 		return;
-	
+
 	temp_ptr = *stack_head;
 	*stack_head = (*stack_head)->next;
 	(*stack_head)->prev = NULL;

@@ -21,14 +21,12 @@ int main(int argc, char **argv)
 		fprintf(stderr, "USAGE: monty file\n");
 		exit(EXIT_FAILURE);
 	}
-
 	fp = fopen(argv[1], "r");
 	if (fp == NULL)
 	{
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
-
 	while (fgets(line, sizeof(line), fp) != NULL)
 	{
 		line_number++;
@@ -40,9 +38,7 @@ int main(int argc, char **argv)
 			fprintf(stderr, "L%d: usage: push integer\n", line_number);
 			exit(EXIT_FAILURE);
 		} else if (err_no == 3)
-		{
 			continue;
-		}
 		else
 		{
 			fprintf(stderr, "L%d: unknown instruction %s\n",
