@@ -18,7 +18,11 @@ int check_op_code(char *opcode)
 		strcmp(opcode, "mul") == 0 ||
 		strcmp(opcode, "div") == 0 ||
 		strcmp(opcode, "mod") == 0 ||
-		strcmp(opcode, "nop") == 0)
+		strcmp(opcode, "nop") == 0 ||
+		strcmp(opcode, "pchar") == 0 ||
+		strcmp(opcode, "pstr") == 0 ||
+		strcmp(opcode, "rotl") == 0 ||
+		strcmp(opcode, "rotr") == 0)
 		return (0);
 
 	return (1);

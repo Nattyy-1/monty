@@ -24,4 +24,5 @@ void pchar(stack_t **stack_head, unsigned int line_number)
 	}
 
 	putchar(ascii_value);
+	putchar('\n');
 }
