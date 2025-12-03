@@ -10,6 +10,7 @@ void rotl(stack_t **stack_head, unsigned int line_number)
 	stack_t *temp_ptr;
 	stack_t *temp_head;
 
+	(void)line_number;
 	if (stack_head == NULL || *stack_head == NULL || (*stack_head)->next == NULL)
 		return;
 
